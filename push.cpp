@@ -3,9 +3,19 @@
 //
 #include "push.h"
 #include <array>
+#include <stdexcept>
 #include <string>
+#include <iostream>
+const int Array_size = 5;
 
-
-void pile_push(std::array<std::string, Array_size> &pile, int size) {
-
+void pile_push(std::array<std::string, Array_size> &pile, int valeur) {
+    try{
+    for (int i = 0; i < Array_size; i++) {
+        if (pile[i] == "?") {
+            pile[i] = valeur;
+        }
+    }
+    }catch(const std::overflow_error& erreur) {
+        std::cout << "Erreur : " << erreur.what() << std::endl;
+    }
 }
