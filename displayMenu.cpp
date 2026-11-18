@@ -18,5 +18,5 @@ void displayMenu() {
               << "6 - Afficher le nombre de valeurs" << std::endl
               << "7 - Vider la pile" << std::endl
               << "8 - Afficher toute la pile" << std::endl
-              << "0 - Quitter" << std::endl< << std::endl;
+              << "0 - Quitter" << std::endl << std::endl;
 }
