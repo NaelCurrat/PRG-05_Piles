@@ -2,6 +2,7 @@
 // Created by Jib on 18.11.2026.
 //
 #include "top.h"
+
 #include "size.h"
 std::string pile_top(std::array<std::string, Array_size> &pile) {
     try {
