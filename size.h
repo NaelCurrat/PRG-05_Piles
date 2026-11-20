@@ -4,5 +4,5 @@
 
 #ifndef SIZE_H
 #define SIZE_H
-
+int pile_size();
 #endif //SIZE_H

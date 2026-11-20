@@ -1,4 +1,8 @@
 //
 // Created by Jib on 18.11.2026.
 //
-#include "size.h"
+#include <iostream>
+#include "config.h"
+int pile_size() {
+    return pile_counter;
+}
