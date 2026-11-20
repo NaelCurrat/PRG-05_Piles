@@ -37,6 +37,11 @@ int main() {
             case 4: std::cout << "Modifier l'élément au sommet" << std::endl; // Placeholder, à remplacer par la methode
                 break;
             case 5: std::cout << "Vérifier si la pile est vide" << std::endl; // Placeholder, à remplacer par la methode
+                if (pile_empty(pile)) {
+                    std::cout << "La pile est vide" << std::endl;
+                }else {
+                    std::cout << "La pile n'est pas vide" << std::endl;
+                }
                 break;
             case 6: std::cout << "Afficher le nombre de valeurs" << std::endl; // Placeholder, à remplacer par la methode
                 break;
