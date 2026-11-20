@@ -15,5 +15,6 @@ int askNumber() {
     std::cout << "Valeur : ";
     int userChoiseValue;
     std::cin >> userChoiseValue;
+    std::cout << std::endl;
     return userChoiseValue;
 }
