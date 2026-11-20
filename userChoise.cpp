@@ -10,3 +10,10 @@ int userChoise() {
     }while( !(userChoiseValue>=0 && userChoiseValue<=8) );
     return userChoiseValue;
 }
+
+int askNumber() {
+    std::cout << "Valeur : ";
+    int userChoiseValue;
+    std::cin >> userChoiseValue;
+    return userChoiseValue;
+}
