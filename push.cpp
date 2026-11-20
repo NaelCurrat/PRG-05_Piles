@@ -10,11 +10,7 @@
 
 void pile_push(std::array<std::string, Array_size> &pile, int userValue) {
     try{
-    for (int i = 0; i < Array_size - 1; i++) {
-        if (pile[i] == "?") {
-            pile[i] = userValue;
-        }
-    }
+    pile[pile_counter] = userValue;
         pile_counter++;
     }catch(const std::overflow_error& erreur) {
         std::cout << "Erreur : " << erreur.what() << std::endl;
