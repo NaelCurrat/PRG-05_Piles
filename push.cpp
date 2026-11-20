@@ -15,6 +15,7 @@ void pile_push(std::array<std::string, Array_size> &pile, int valeur) {
             pile[i] = valeur;
         }
     }
+        pile_counter++;
     }catch(const std::overflow_error& erreur) {
         std::cout << "Erreur : " << erreur.what() << std::endl;
     }
