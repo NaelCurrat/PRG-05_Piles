@@ -4,6 +4,8 @@
 
 #ifndef USERCHOISE_H
 #define USERCHOISE_H
+#include <string>
+
 int userChoise();
-int askNumber();
+int askNumber(std::string displayMessage);
 #endif //USERCHOISE_H

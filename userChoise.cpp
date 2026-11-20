@@ -11,8 +11,8 @@ int userChoise() {
     return userChoiseValue;
 }
 
-int askNumber() {
-    std::cout << "Valeur : ";
+int askNumber(std::string displayMessage) {
+    std::cout << displayMessage;
     int userChoiseValue;
     std::cin >> userChoiseValue;
     std::cout << std::endl;
