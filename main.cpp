@@ -1,4 +1,4 @@
-const int Array_size = 5;
+
 
 #include <iostream>
 #include <cstdlib>
@@ -10,7 +10,7 @@ const int Array_size = 5;
 #include "top.h"
 #include "displayMenu.h"
 #include "userChoise.h"
-
+#include "config.h"
 
 
 int main() {

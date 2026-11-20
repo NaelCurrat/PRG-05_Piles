@@ -13,4 +13,5 @@ add_executable(PRG_05_Piles
         size.cpp
         top.cpp
         userChoise.cpp
+        config.h
 )

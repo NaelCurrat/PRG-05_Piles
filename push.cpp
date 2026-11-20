@@ -6,7 +6,7 @@
 #include <stdexcept>
 #include <string>
 #include <iostream>
-const int Array_size = 5;
+#include "config.h"
 
 void pile_push(std::array<std::string, Array_size> &pile, int valeur) {
     try{
