@@ -16,8 +16,6 @@
 int main() {
 
     std::array<std::string, Array_size> pile;
-    pile.fill("?");
-
     displayMenu();
     int menuEntry = 0;
     do {
@@ -32,7 +30,7 @@ int main() {
                 break;
             case 2: std::cout << "Dépiler" << std::endl; // Placeholder, à remplacer par la methode
                 break;
-            case 3: pile_top(pile);
+            case 3: std::cout << "Sommet : " << pile_top(pile);
                 break;
             case 4: std::cout << "Modifier l'élément au sommet" << std::endl; // Placeholder, à remplacer par la methode
                 break;
@@ -49,6 +47,9 @@ int main() {
                 break;
             case 8: std::cout << "Afficher toute la pile" << std::endl; // Placeholder, à remplacer par la methode
                 break;
+        }
+        for (const std::string& element : pile) {
+            std::cout << element << ",";
         }
 
     }while (menuEntry!=0);
