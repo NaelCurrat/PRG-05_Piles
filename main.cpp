@@ -38,7 +38,7 @@ int main() {
                 break;
             case 6: std::cout << "Afficher le nombre de valeurs" << std::endl; // Placeholder, à remplacer par la methode
                 break;
-            case 7: std::cout << "Vider la pile" << std::endl; // Placeholder, à remplacer par la methode
+            case 7: pile_clear(pile);
                 break;
             case 8: std::cout << "Afficher toute la pile" << std::endl; // Placeholder, à remplacer par la methode
                 break;
