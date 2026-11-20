@@ -26,15 +26,15 @@ int main() {
                 break;
             case 1: std::cout << "Empiler" << std::endl; // Placeholder, à remplacer par la methode
                 pile_push(pile, askNumber("Valeur : "));
-                std::cout << "Valeur empilée !" << std::endl;
+                std::cout << "Valeur empilee !" << std::endl;
                 break;
-            case 2: std::cout << "Dépiler" << std::endl; // Placeholder, à remplacer par la methode
+            case 2: std::cout << "Depiler" << std::endl; // Placeholder, à remplacer par la methode
                 break;
             case 3: std::cout << "Sommet : " << pile_top(pile);
                 break;
-            case 4: std::cout << "Modifier l'élément au sommet" << std::endl; // Placeholder, à remplacer par la methode
+            case 4: std::cout << "Modifier l'element au sommet" << std::endl; // Placeholder, à remplacer par la methode
                 break;
-            case 5: std::cout << "Vérifier si la pile est vide" << std::endl; // Placeholder, à remplacer par la methode
+            case 5: std::cout << "Verifier si la pile est vide" << std::endl; // Placeholder, à remplacer par la methode
                 if (pile_empty(pile)) {
                     std::cout << "La pile est vide" << std::endl;
                 }else {
