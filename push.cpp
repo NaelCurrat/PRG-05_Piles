@@ -10,7 +10,7 @@
 
 void pile_push(std::array<std::string, Array_size> &pile, int valeur) {
     try{
-    for (int i = 0; i < Array_size; i++) {
+    for (int i = 0; i < Array_size - 1; i++) {
         if (pile[i] == "?") {
             pile[i] = valeur;
         }
