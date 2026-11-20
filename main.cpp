@@ -32,7 +32,7 @@ int main() {
                 break;
             case 2: std::cout << "Dépiler" << std::endl; // Placeholder, à remplacer par la methode
                 break;
-            case 3: std::cout << "Consulter le sommet" << std::endl; // Placeholder, à remplacer par la methode
+            case 3: pile_top(pile);
                 break;
             case 4: std::cout << "Modifier l'élément au sommet" << std::endl; // Placeholder, à remplacer par la methode
                 break;

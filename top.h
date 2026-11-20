@@ -4,7 +4,8 @@
 
 #ifndef TOP_H
 #define TOP_H
-#include <array>
+#include <iostream>
 #include "config.h"
-void pile_top(std::array<std::string, Array_size> &pile);
+std::string pile_top(std::array<std::string, Array_size> &pile);
+void pile_top(std::array<std::string, Array_size> &pile, int value);
 #endif //TOP_H
