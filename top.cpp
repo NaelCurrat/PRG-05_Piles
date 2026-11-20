@@ -5,7 +5,7 @@
 #include "size.h"
 std::string pile_top(std::array<std::string, Array_size> &pile) {
     try {
-        std::string top = pile.at(pile_counter - 1);
+        std::string top = pile[pile_counter - 1];
         return top;
     }catch (std::exception &e) {
         throw std::underflow_error("Erreur : impossible de consulter le sommet d'une pile vide.");
