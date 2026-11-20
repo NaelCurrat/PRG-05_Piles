@@ -8,11 +8,11 @@
 #include <iostream>
 #include "config.h"
 
-void pile_push(std::array<std::string, Array_size> &pile, int valeur) {
+void pile_push(std::array<std::string, Array_size> &pile, int userValue) {
     try{
     for (int i = 0; i < Array_size - 1; i++) {
         if (pile[i] == "?") {
-            pile[i] = valeur;
+            pile[i] = userValue;
         }
     }
         pile_counter++;
