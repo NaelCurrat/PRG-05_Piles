@@ -1,0 +1,22 @@
+
+# Compiled executables
+myproject
+*.o
+*.out
+
+# Debug files
+*.gch
+*.pch
+core
+
+# Build directories
+build/
+cmake-build-*/
+
+# VS Code local settings (keep tasks.json tracked)
+.vscode/*
+!.vscode/tasks.json
+
+# OS files
+.DS_Store
+Thumbs.db

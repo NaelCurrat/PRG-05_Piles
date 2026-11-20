@@ -4,9 +4,9 @@
 #include "userChoise.h"
 #include <iostream>
 int userChoise() {
-    int userChoise;
+    int userChoiseValue;
     do {
-        std::cin >>userChoise;
-    }while( !(userChoise>=0 && userChoise<=8) );
-    return userChoise;
+        std::cin >>userChoiseValue;
+    }while( !(userChoiseValue>=0 && userChoiseValue<=8) );
+    return userChoiseValue;
 }
