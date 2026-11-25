@@ -3,21 +3,24 @@
 //
 #include "top.h"
 
+#include "pop.h"
+#include "push.h"
 #include "size.h"
 std::string pile_top(std::array<std::string, Array_size> &pile) {
-    try {
+    if (!(pile_counter)) { // si la pile est vide
+        throw std::underflow_error("Erreur : impossible de consulter le sommet d'une pile vide.");
+    }else { // si la pile n'est pas vide
         std::string top = pile[pile_counter - 1];
         return top;
-    }catch (std::exception &e) {
-        throw std::underflow_error("Erreur : impossible de consulter le sommet d'une pile vide.");
     }
 }
 
 
 void pile_top(std::array<std::string, Array_size> &pile, int value) {
-    if (!pile_counter) {
-        throw std::underflow_error("Erreur : impossible de consulter le sommet d'une pile vide.");
-    }else {
-
+    if (!(pile_counter)) { // si la pile est vide
+        throw std::underflow_error("Erreur : impossible de remplacer le sommet d'une pile vide.");
+    }else { // si la pile n'est pas vide
+        pile_pop(pile);
+        pile_push(pile, value);
     }
 }

@@ -42,7 +42,13 @@ int main() {
                 break;
             case 3: std::cout << "Sommet : " << pile_top(pile);
                 break;
-            case 4: std::cout << "Modifier l'element au sommet" << std::endl; // Placeholder, à remplacer par la methode
+            case 4:
+                try{
+                    pile_top(pile, askNumber("Valeur de remplacement : "));
+                    std::cout << "Valeur remplacée." << std::endl;
+                }catch(const std::underflow_error& erreur) {
+                    std::cout << erreur.what() << std::endl;
+                }
                 break;
             case 5:
                 if (pile_empty(pile)) {
