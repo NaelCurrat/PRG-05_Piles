@@ -64,6 +64,7 @@ int main() {
                 std::cout << "Pile vidée." << std::endl;
                 break;
             case 8: std::cout << "Afficher toute la pile" << std::endl; // Placeholder, à remplacer par la methode
+                displayPile(pile);
                 break;
         }
         std::cout << "pile: [ ";

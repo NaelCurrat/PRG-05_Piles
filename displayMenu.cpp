@@ -20,3 +20,18 @@ void displayMenu() {
               << "8 - Afficher toute la pile" << std::endl
               << "0 - Quitter" << std::endl << std::endl;
 }
+
+void displayPile(std::array<std::string, Array_size> &pile) {
+    if (pile_counter == 1) {
+        std::cout << "Sommet/Fond ->" << pile[0] << std::endl;
+    }else {
+        for (int i = pile_counter - 1; i >= 0; i--) {
+            if (i == pile_counter - 1) {
+                std::cout << "Sommet ->";
+            }else if (i == 0) {
+                std::cout << "Fond ->";
+            }
+            std::cout << pile[i] << std::endl;
+        }
+    }
+}
