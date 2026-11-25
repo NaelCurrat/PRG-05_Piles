@@ -9,13 +9,9 @@
 #include "config.h"
 
 void pile_push(std::array<std::string, Array_size> &pile, int userValue) {
-    try{
         if (pile_counter >= pile.size()) {
             throw std::overflow_error("La pile est deja pleine !");
         }
     pile[pile_counter] = std::to_string(userValue);
         pile_counter++;
-    }catch(const std::overflow_error& erreur) {
-        std::cout << "Erreur : " << erreur.what() << std::endl;
-    }
 }

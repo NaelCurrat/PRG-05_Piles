@@ -25,8 +25,12 @@ int main() {
             case 0:std::cout << "Fin de programme." << std::endl;
                 break;
             case 1:
-                pile_push(pile, askNumber("Valeur : "));
-                std::cout << "Valeur empilee !" << std::endl;
+                try{
+                    pile_push(pile, askNumber("Valeur : "));
+                    std::cout << "Valeur empilee !" << std::endl;
+                }catch(const std::overflow_error& erreur) {
+                    std::cout << "Erreur : " << erreur.what() << std::endl;
+                }
                 break;
             case 2:
                 pile_pop(pile);
