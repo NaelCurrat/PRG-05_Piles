@@ -41,7 +41,7 @@ int main() {
                     std::cout << "La pile n'est pas vide" << std::endl;
                 }
                 break;
-            case 6: std::cout << "Afficher le nombre de valeurs" << std::endl; // Placeholder, à remplacer par la methode
+            case 6: std::cout << "Nombre de valeurs: " << pile_counter << std::endl; // Placeholder, à remplacer par la methode
                 break;
             case 7: pile_clear(pile);
                 break;
