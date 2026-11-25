@@ -28,7 +28,8 @@ int main() {
                 pile_push(pile, askNumber("Valeur : "));
                 std::cout << "Valeur empilee !" << std::endl;
                 break;
-            case 2: std::cout << "Depiler" << std::endl; // Placeholder, à remplacer par la methode
+            case 2:
+                pile_pop(pile);
                 break;
             case 3: std::cout << "Sommet : " << pile_top(pile);
                 break;
