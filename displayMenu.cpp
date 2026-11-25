@@ -29,11 +29,12 @@ void displayPile(std::array<std::string, Array_size> &pile) {
         for (int i = pile_counter - 1; i >= 0; i--) {
             if (i == pile_counter - 1) {
                 std::cout << "Sommet -> ";
+                std::cout << std::setw( 9);
             }else if (i == 0) {
-                std::cout << "Fond   ->";
-                std::cout << std::setw( 1+pile[pile_counter - 1].size());
+                std::cout << "Fond   -> ";
+                std::cout << std::setw( 9);
             }else {
-                std::cout << std::setw(10 + pile[pile_counter - 1].size());
+                std::cout << std::setw(19);
             }
             std::cout << pile[i] << std::endl;
         }

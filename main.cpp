@@ -22,7 +22,8 @@ int main() {
         menuEntry = userChoise();
         std::cout << "Votre choix : " << menuEntry << std::endl;
         switch (menuEntry) {
-            case 0:std::cout << "Fin de programme." << std::endl;
+            case 0:
+                std::cout << "Fin de programme." << std::endl;
                 break;
             case 1:
                 try{
@@ -40,7 +41,8 @@ int main() {
                     std::cout << "Erreur : " << erreur.what() << std::endl;
                 }
                 break;
-            case 3: std::cout << "Sommet : " << pile_top(pile);
+            case 3:
+                std::cout << "Sommet : " << pile_top(pile);
                 break;
             case 4:
                 try{
@@ -64,15 +66,10 @@ int main() {
                 pile_clear(pile);
                 std::cout << "Pile videe." << std::endl;
                 break;
-            case 8: std::cout << "Afficher toute la pile" << std::endl; // Placeholder, à remplacer par la methode
+            case 8:
                 displayPile(pile);
                 break;
         }
-        std::cout << "pile: [ ";
-        for (const std::string& element : pile) {
-            std::cout  << element << ", ";
-        }
-        std::cout << "x]";
 
         std::cout << std::endl << std::endl;
 
