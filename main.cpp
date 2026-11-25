@@ -35,7 +35,7 @@ int main() {
             case 2:
                 try{
                     pile_pop(pile);
-                    std::cout << "Valeur retirée : " << pile[pile_counter] << std::endl;
+                    std::cout << "Valeur retiree : " << pile[pile_counter] << std::endl;
                 }catch(const std::overflow_error& erreur) {
                     std::cout << "Erreur : " << erreur.what() << std::endl;
                 }
@@ -45,7 +45,7 @@ int main() {
             case 4:
                 try{
                     pile_top(pile, askNumber("Valeur de remplacement : "));
-                    std::cout << "Valeur remplacée." << std::endl;
+                    std::cout << "Valeur remplacee." << std::endl;
                 }catch(const std::underflow_error& erreur) {
                     std::cout << erreur.what() << std::endl;
                 }
@@ -57,11 +57,12 @@ int main() {
                     std::cout << "La pile n'est pas vide" << std::endl;
                 }
                 break;
-            case 6: std::cout << "Nombre de valeurs: " << pile_counter << std::endl; // Placeholder, à remplacer par la methode
+            case 6:
+                std::cout << "Nombre de valeurs : " << pile_counter << std::endl;
                 break;
             case 7:
                 pile_clear(pile);
-                std::cout << "Pile vidée." << std::endl;
+                std::cout << "Pile videe." << std::endl;
                 break;
             case 8: std::cout << "Afficher toute la pile" << std::endl; // Placeholder, à remplacer par la methode
                 displayPile(pile);

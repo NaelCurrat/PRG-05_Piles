@@ -3,6 +3,7 @@
 //
 #include "displayMenu.h"
 #include <cstdlib>
+#include <iomanip>
 #include <iostream>
 #include <ostream>
 
@@ -27,9 +28,12 @@ void displayPile(std::array<std::string, Array_size> &pile) {
     }else {
         for (int i = pile_counter - 1; i >= 0; i--) {
             if (i == pile_counter - 1) {
-                std::cout << "Sommet ->";
+                std::cout << "Sommet -> ";
             }else if (i == 0) {
-                std::cout << "Fond ->";
+                std::cout << "Fond   ->";
+                std::cout << std::setw( 1+pile[pile_counter - 1].size());
+            }else {
+                std::cout << std::setw(10 + pile[pile_counter - 1].size());
             }
             std::cout << pile[i] << std::endl;
         }
