@@ -33,7 +33,12 @@ int main() {
                 }
                 break;
             case 2:
-                pile_pop(pile);
+                try{
+                    pile_pop(pile);
+                    std::cout << "Valeur retirée : " << pile[pile_counter] << std::endl;
+                }catch(const std::overflow_error& erreur) {
+                    std::cout << "Erreur : " << erreur.what() << std::endl;
+                }
                 break;
             case 3: std::cout << "Sommet : " << pile_top(pile);
                 break;

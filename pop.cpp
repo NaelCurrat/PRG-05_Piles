@@ -9,7 +9,5 @@ void pile_pop(std::array<std::string, Array_size> &pile) {
         throw std::overflow_error("impossible de dépiler une pile vide.");
     }else { // si la pile n'est pas vide
         pile_counter--;
-        std::cout << "Valeur retirée : " << pile[pile_counter] << std::endl;
-
     }
 }
