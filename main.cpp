@@ -48,9 +48,11 @@ int main() {
             case 8: std::cout << "Afficher toute la pile" << std::endl; // Placeholder, à remplacer par la methode
                 break;
         }
+        std::cout << "pile: [ ";
         for (const std::string& element : pile) {
-            std::cout << element << ",";
+            std::cout  << element << ", ";
         }
+        std::cout << "x]";
 
     }while (menuEntry!=0);
 
