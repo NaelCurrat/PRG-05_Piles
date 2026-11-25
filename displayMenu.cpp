@@ -11,10 +11,10 @@ void displayMenu() {
     std::cout << "Ce programme permet de manipuler une pile d'entiers." << std::endl << std::endl;
 
     std::cout << "1 - Empiler" << std::endl
-              << "2 - Dépiler" << std::endl
+              << "2 - Depiler" << std::endl
               << "3 - Consulter le sommet" << std::endl
-              << "4 - Modifier l'élément au sommet" << std::endl
-              << "5 - Vérifier si la pile est vide" << std::endl
+              << "4 - Modifier l'element au sommet" << std::endl
+              << "5 - Verifier si la pile est vide" << std::endl
               << "6 - Afficher le nombre de valeurs" << std::endl
               << "7 - Vider la pile" << std::endl
               << "8 - Afficher toute la pile" << std::endl
