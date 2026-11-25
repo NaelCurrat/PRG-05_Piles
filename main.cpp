@@ -54,6 +54,8 @@ int main() {
         }
         std::cout << "x]";
 
+        std::cout << std::endl << std::endl;
+
     }while (menuEntry!=0);
 
     return EXIT_SUCCESS;
