@@ -9,9 +9,5 @@
 
 
 bool pile_empty(std::array<std::string, Array_size> &pile) {
-    if (pile_counter == 0) {
-        return true;
-    }else {
-        return false;
-    }
+    return !(pile_counter);
 }

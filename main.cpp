@@ -24,7 +24,7 @@ int main() {
         switch (menuEntry) {
             case 0:std::cout << "Fin de programme." << std::endl;
                 break;
-            case 1: std::cout << "Empiler" << std::endl; // Placeholder, à remplacer par la methode
+            case 1:
                 pile_push(pile, askNumber("Valeur : "));
                 std::cout << "Valeur empilee !" << std::endl;
                 break;
@@ -34,7 +34,7 @@ int main() {
                 break;
             case 4: std::cout << "Modifier l'element au sommet" << std::endl; // Placeholder, à remplacer par la methode
                 break;
-            case 5: std::cout << "Verifier si la pile est vide" << std::endl; // Placeholder, à remplacer par la methode
+            case 5:
                 if (pile_empty(pile)) {
                     std::cout << "La pile est vide" << std::endl;
                 }else {
@@ -43,7 +43,9 @@ int main() {
                 break;
             case 6: std::cout << "Nombre de valeurs: " << pile_counter << std::endl; // Placeholder, à remplacer par la methode
                 break;
-            case 7: pile_clear(pile);
+            case 7:
+                pile_clear(pile);
+                std::cout << "Pile vidée." << std::endl;
                 break;
             case 8: std::cout << "Afficher toute la pile" << std::endl; // Placeholder, à remplacer par la methode
                 break;
